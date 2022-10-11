@@ -1,0 +1,126 @@
+CONTEXT: 
+This folder contains code to train and use RCNN segmentation and detection
+models to extract cardiothoracic ratio (CTR) and cardiopulmonary area ratio
+(CPAR) of posterior-anterior chest X-ray samples in MIMIC-CXR-JPG. CTR and CPAR
+values can then be used to classify cardiomegaly samples. 
+
+Different ensemble models (detection prioritised, segmentation prioritised, best
+score ensemble, average ensemble) are avalible when retreiving CTR values. CPAR
+values can only be obtained via a segmentaiton only set of models.   
+
+These scrpits use 3 sources of medical imaging databases: MIMIC-CXR-JPG,
+Japanese scociety of radiological technology (JSRT), Montgomery Tuberculosis
+(MGMY). These images are paired with lung and heart segmentaion masks. For
+MIMIC-CXR-JPG - 200 segmentation masks are avalible on PhysioNet in an
+assocaited datapaper (); for JSRT - segmentations are included in database; for
+MGMY - lung segmentation are avalible in teh Segmentation of Chest radiographs
+(SCR) database, heart segmentation are avalible with IMC segmentations. Links
+avalible below.
+
+This folder is linked to two papers
+- main paper
+- data paper (biomarkers)
+
+AUTHOR: 
+Benjamin Duvieusart (University of Oxford, Department of Engineering Science)
+with particular acknowledgments to Felix Krones (University of Oxford, Oxford
+Internet Institute) for help in writing code and Adam Mahdi (University of
+Oxford, Oxford Institute) for his supervision.
+
+
+Usage notes: 
+If using this code please cite
+- main paper
+- data paper
+
+
+DOWNLOADS: 
+Before using this folder please download the following and place into the
+assumed file structure described below
+
+- MIMIC-CXR-JPG files and image database --> https://physionet.org/content/mimic-cxr-jpg/2.0.0/
+- MIMIC-CXR files (images not needed) --> https://physionet.org/content/mimic-cxr/2.0.0/
+- MIMIC-CXR masks --> LINK
+
+- Montgomery image database --> LINK
+- Montgomery associated lung mask database --> LINK
+- Montgomery heart masks --> LINK
+
+- JSRT image database --> LINK
+- SCR mask databse for JSRT database --> LINK
+
+- support python files from pytorch for RCNN models --> LINK
+
+
+
+--- ASSUMED FILE STRUCTURE ---
+  
+    ***script to train models***
+    ./heart_detection.py 
+    ./heart_segmentation.py
+    ./lung_detection.py
+    ./lung_segmentation.py
+
+    ***scripts to extract biomarkers (CTR and CPAR) from PA MIMIC-CXR-JPG images***
+    CPAR_full_MIMIC.py
+    CTR_full_MIMIC.py
+
+
+    ***folder for MIMIC database containing files from MIMIC-CXR and MIMIC-CXR-JPG files, images, and masks***
+    ./MIMIC 
+        /mimic-cxr-2.0.0-metadata.csv.gz
+        /cxr-record-list.csv.gz
+        /files 
+            ***x-ray images in folder structure imported from MIMIC-CXR-JPG database***
+        /masks
+            /heart
+                ***folder with heart mask images for MIMIC***
+            /lungs
+                ***folder with lung mask images for MIMIC***
+
+
+    ***folders for Montgomery database containing images and masks***
+    ./MGMY
+        /CXR_png
+            ***folder with images from Montgomery database***
+        /masks
+            /heart
+                ***folder with heart mask images for Montgomery***
+            /leftMask
+                ***folder with left lung mask images for Montgomery***
+            /rightMask
+                ***folder with right lung mask images for Montgomery***
+            
+
+    ***folders for JSRT database containing images and masks***
+    ./JSRT
+        /images
+            ***folder with all images from JSRT database***
+        /masks
+            /heart
+                ***folder with heart mask images for JSRT***
+            /left_lung
+                ***folder with left lung mask images for JSRT***
+            /right_lung
+                ***folder with right lung mask images for JSRT***
+
+
+    ./heart_detection
+        ***folder with final lung segmentation model + training, testing, and validation sets***
+
+
+    ./heart_segmentation
+        ***folder with final lung segmentation model + training, testing, and validation sets***
+
+
+    ./lung_detection
+        ***folder with final lung segmentation model + training, testing, and validation sets***
+
+
+    ./lung_segmentation
+        ***folder with final lung segmentation model + training, testing, and validation sets***
+
+
+    ./support
+        ***folder with python files containing engine.py and utils.py fucntion scripts from pytorch, plus empty __init__.py file***
+
