@@ -16,8 +16,8 @@ import os
 
 
 ## PATHS
-base_path = './heart_detection/'
-save_path = './heart_detection/'
+base_path = '../Biomarker Extraction/heart_detection/'
+save_path = '../Biomarker Extraction/heart_detection/'
 
 
 ## VARIABLES
