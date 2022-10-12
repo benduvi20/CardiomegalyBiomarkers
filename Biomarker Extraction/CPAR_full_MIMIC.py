@@ -17,34 +17,33 @@ import matplotlib.pyplot as plt\
 
 ## INITIATION
 
-Label = 'Cardiomegaly' # relevant condition
-view = 'PA'            # relevant view
+view = 'PA'            # relevant x-ray view
 input_size = (256,256) # shape of image when input to model
 score_threshold = 0.7  # minimum confidence score for detection/segmentation to be accepted
 num_classes = 2        # number of classes in models (taget - heart or lung - and background)
 
 # path for file containing DICOM image metadata (incl. x-ray view) -- from MIMIC-CXR-JPG
-cxr_metadata_path = './MIMIC/mimic-cxr-2.0.0-metadata.csv.gz'  
+cxr_metadata_path = '../MIMIC/mimic-cxr-2.0.0-metadata.csv.gz'  
 
 # path for file which links DICOM IDs to image filepaths in MIMIC -- from MIMIC-CXR
-cxr_records_path = './MIMIC/cxr-record-list.csv.gz' 
+cxr_records_path = '../MIMIC/cxr-record-list.csv.gz' 
 
 # path to MIMIC-CXR-JPG database
-data_path = './MIMIC'  
+data_path = '../MIMIC/'  
 
 # paths for model loading
-heart_model_path = './heart_segmentation/model.pt'
-lung_model_path = './lung_segmentation/model.pt'
+heart_model_path = '../Biomarker Extraction/heart_segmentation/model.pt'
+lung_model_path = '../Biomarker Extraction/lung_segmentation/model.pt'
 
 # save_folder
-save_path = './save_folder/'
+save_path = '../Biomarker Extraction/save_folder/CPAR/'
 
 # set device to GPU if avalible
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 # read chest x-ray metadata and select only samples in posterior-anterior (PA) view
 cxr_metadata = pd.read_pickle(cxr_metadata_path)
-cxr_metadata_PA = cxr_metadata.loc[cxr_metadata['ViewPosition'] == 'PA']
+cxr_metadata_PA = cxr_metadata.loc[cxr_metadata['ViewPosition'] == view]
 
 # read chest x-ray records and extract filepaths for PA images
 cxr_records = pd.read_csv(cxr_records_path) 
