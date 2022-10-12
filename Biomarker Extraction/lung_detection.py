@@ -16,8 +16,8 @@ import os
 
 
 ## PATHS
-base_path = './lung_detection/'
-save_path = './lung_detection/'
+base_path = '../Biomarker Extraction/lung_detection/'
+save_path = '../Biomarker Extraction/lung_detection/'
 
 ## VARIABLES
 # data pre-processing
