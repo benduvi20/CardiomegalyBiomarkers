@@ -106,19 +106,19 @@ assumed file structure described below
 
 
     ./heart_detection
-        ***folder with final lung segmentation model + training, testing, and validation sets***
+        ***folder with used training, testing, and validation sets***
 
 
     ./heart_segmentation
-        ***folder with final lung segmentation model + training, testing, and validation sets***
+        ***folder with used training, testing, and validation sets***
 
 
     ./lung_detection
-        ***folder with final lung segmentation model + training, testing, and validation sets***
+        ***folder with used training, testing, and validation sets***
 
 
     ./lung_segmentation
-        ***folder with final lung segmentation model + training, testing, and validation sets***
+        ***folder with used training, testing, and validation sets***
 
 
     ./support
