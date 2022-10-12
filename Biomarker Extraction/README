@@ -18,8 +18,8 @@ MGMY - lung segmentation are avalible in teh Segmentation of Chest radiographs
 avalible below.
 
 This folder is linked to two papers
-- main paper
-- data paper (biomarkers)
+- https://doi.org/10.1007/978-3-031-12053-4_2
+- LINK DATA PAPER (biomarkers)
 
 AUTHOR: 
 Benjamin Duvieusart (University of Oxford, Department of Engineering Science)
@@ -28,29 +28,29 @@ Internet Institute) for help in writing code and Adam Mahdi (University of
 Oxford, Oxford Institute) for his supervision.
 
 
-Usage notes: 
+USAGE NOTES: 
 If using this code please cite
-- main paper
-- data paper
+- https://doi.org/10.1007/978-3-031-12053-4_2
+- LINK DATA PAPER (biomarkers)
 
+Please follow required file downloads and assumed file structure shown below
 
-DOWNLOADS: 
+--- REQUIRED FILE DOWNLOADS ---  
 Before using this folder please download the following and place into the
 assumed file structure described below
 
 - MIMIC-CXR-JPG files and image database --> https://physionet.org/content/mimic-cxr-jpg/2.0.0/
 - MIMIC-CXR files (images not needed) --> https://physionet.org/content/mimic-cxr/2.0.0/
-- MIMIC-CXR masks --> LINK
+- MIMIC-CXR masks --> LINK DATA PAPER (masks)
 
-- Montgomery image database --> LINK
-- Montgomery associated lung mask database --> LINK
-- Montgomery heart masks --> LINK
+- Montgomery County image database --> https://doi.org/10.3978%2Fj.issn.2223-4292.2014.11.20 (paper); https://www.kaggle.com/datasets/raddar/tuberculosis-chest-xrays-montgomery (download)
+- Montgomery County associated lung mask database --> https://doi.org/10.3978%2Fj.issn.2223-4292.2014.11.20
+- Montgomery County heart masks --> LINK DATA PAPER (masks)
 
-- JSRT image database --> LINK
-- SCR mask databse for JSRT database --> LINK
+- JSRT image database --> https://www.ajronline.org/doi/pdf/10.2214/ajr.174.1.1740071 (paper); http://db.jsrt.or.jp/eng.php (download)
+- SCR mask databse for JSRT database --> https://www.isi.uu.nl/Research/Databases/SCR/index.php 
 
-- support python files from pytorch for RCNN models --> LINK
-
+- support python files (engine.py and utils.py) from pytorch for RCNN models --> https://github.com/pytorch/vision/tree/main/references/detection 
 
 
 --- ASSUMED FILE STRUCTURE ---
@@ -122,5 +122,5 @@ assumed file structure described below
 
 
     ./support
-        ***folder with python files containing engine.py and utils.py fucntion scripts from pytorch, plus empty __init__.py file***
-
+        ***folder with python files containing engine.py (only train_one_epoch function is needed) and utils.py fucntion scripts from pytorch, plus empty __init__.py file***
+        
