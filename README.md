@@ -35,6 +35,11 @@ It is split into 2 different subfolders
 
         ***folder with python files containing engine.py (for train_one_epoch fucntion) and utils.py fucntion scripts from pytorch, plus empty __init__.py file***
         /support/
+        
+        ***save folder for biomarker values, graphs, and samples output***
+        /save_folder
+          /CTR/
+          /CPAR/
 
     
     ***folder containing code for calssification of cardiomegaly samples using biomarkers values and other methods***
