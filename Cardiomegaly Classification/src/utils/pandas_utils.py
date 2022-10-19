@@ -1,5 +1,5 @@
-"""  This file contains more general functions that are used within nodes
-"""
+'''  This file contains more general functions that are used within nodes
+'''
 
 import numpy as np
 import pandas as pd
@@ -7,9 +7,9 @@ from typing import List, Dict, Any
 
 
 def LabelRatio_y(y):
-    """
+    '''
     Calculate percentage of +ve cases for a list of numbers e.g [0,1,1,1,0]
-    """
+    '''
     ratio = sum(y) / len(
         y
     )  # Ratio is just the sum (number of positive cases) over the length (number of all cases)
@@ -17,20 +17,20 @@ def LabelRatio_y(y):
 
 
 def explode(
-    df: pd.DataFrame, lst_cols: List[str], fill_value: str = ""
+    df: pd.DataFrame, lst_cols: List[str], fill_value: str = ''
 ) -> pd.DataFrame:
-    """Explode function for exploding dataframes based on two columns
+    '''Explode function for exploding dataframes based on two columns
     (The default pandas function only allows for exploding based on one column)
 
     :param df: Dataframe to explode
     :type df: pd.DataFrame
     :param lst_cols: Column list
     :type lst_cols: List[str]
-    :param fill_value: Fill value, defaults to ""
+    :param fill_value: Fill value, defaults to ''
     :type fill_value: str, optional
     :return: Adjusted DataFrame
     :rtype: pd.DataFrame
-    """
+    '''
 
     # We need to use this function instead of the default panda explode() function because if you choose to do
     # hourly averages (so each row is an hourly average of ICU data) you need to explode based on two columns (Times,
@@ -85,7 +85,7 @@ def create_pivot(
     aggfunc: str,
     values: str,
 ) -> pd.DataFrame:
-    """Create pivot table using pandas.pivot_table after filtering for labels and renaming labels at the end
+    '''Create pivot table using pandas.pivot_table after filtering for labels and renaming labels at the end
 
     :param df: DataFrame
     :type df: pd.DataFrame
@@ -101,7 +101,7 @@ def create_pivot(
     :type values: str
     :return: Pivoted dataframe
     :rtype: pd.DataFrame
-    """
+    '''
 
     df_filtered = df.loc[df[labels_column].isin(labels.keys())]
     df_pivoted = pd.pivot_table(
@@ -122,7 +122,7 @@ def filter_df_isin(
     filter_col: str,
     filter_list: List[any],
 ) -> pd.DataFrame:
-    """Filter pandas DataFrame via isin()
+    '''Filter pandas DataFrame via isin()
 
     :param df: DataFrame to filter
     :type df: pd.DataFrame
@@ -132,7 +132,7 @@ def filter_df_isin(
     :type filter_list: List[any]
     :return: Filtered DataFrame
     :rtype: pd.DataFrame
-    """
+    '''
 
     return df[df[filter_col].isin(filter_list)]
 
@@ -140,7 +140,7 @@ def filter_df_isin(
 def list_of_dicts_to_dict_of_list(
     dict_list: List[Dict[str, Any]], search_key: str
 ) -> Dict[str, List[Any]]:
-    """Convert the values of the key search_key in a list of dictionaries to a dictionary containing for all keys under the value of search_key all values as a list
+    '''Convert the values of the key search_key in a list of dictionaries to a dictionary containing for all keys under the value of search_key all values as a list
 
     :param dict_list: Original list of dictionaries with a item with key search_key and a dictionary as value
     :type dict_list: List[Dict[str, Any]]
@@ -148,13 +148,13 @@ def list_of_dicts_to_dict_of_list(
     :type search_key: str
     :return: Dictionary containing lists of all values in dict_list sorted by the keys of the dictionary under the dictionary of search_key
     :rtype: Dict[str, List[Any]]
-    """
+    '''
 
     list_dict = {k: [] for k in dict_list[0][search_key].keys()}
-    list_dict["fold"] = []
+    list_dict['fold'] = []
     for index in range(len(dict_list)):
         for key, value in dict_list[index][search_key].items():
             list_dict[key].append(value)
-        list_dict["fold"].append(index)
+        list_dict['fold'].append(index)
 
     return list_dict
