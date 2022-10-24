@@ -11,7 +11,7 @@ from torchvision.models.detection import maskrcnn_resnet50_fpn
 
 import torch
 import numpy as np
-import matplotlib.pyplot as plt\
+import matplotlib.pyplot as plt
 
 
 
