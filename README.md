@@ -1,7 +1,7 @@
 # BIOMRKS_CARMGLY
 
 CONTEXT:
-This repo contains all published code for the training and use of RCNN networks to extract heart and lung detections and segmentaitons. Then the use bounding boxes and masks to caluclate cardiomegaly biomarkers (CTR and CPAR) from chest x-ray samples in the MIMIC-CXR-JPG database.
+This repo contains all published code for the training and use of RCNN networks to extract heart and lung detections and segmentaitons. Then the use bounding boxes and masks to caluclate cardiomegaly biomarkers (CTR and CPAR) from chest x-ray samples in the MIMIC-CXR-JPG database. The biomarker values can then be used alone or in conjuction with other non-imaging data to classify multimodal cardiomegaly samples generated from linked MIMIC-IV and MIMIC-CXR data.
 
 This repo is closely linked to 3 papers (conference, plus 2 data papers), please cite these as approriate according to usage of code and resources:
 - Multimodal Cardiomegaly Classification with Image-Derived Digital Biomarkers (https://doi.org/10.1007/978-3-031-12053-4_2)
