@@ -9,7 +9,7 @@ This repo is closely linked to 3 papers (conference, plus 2 data papers), please
 - physionet masks paper
 
 AUTHORS:
-This repo is largely authord by Benjamin Duvieusart, with significant contributions from Felix Krones and Declan Grant. Particular acknowledgment is given to Adam Mahdi (University of Oxford, Oxford Institute) and Bartłomiej (Bartek) Papież (University of Oxford, Big Data Insitutue) for thier supervision and guidance
+This repo was authord by Benjamin Duvieusart and Felix Krones, with some scripts heavily based on code by Declan Grant. Particular acknowledgment is given to Adam Mahdi (University of Oxford, Oxford Institute) and Bartłomiej Papież (University of Oxford, Big Data Insitutue) for thier supervision and guidance
 
 USGAE NOTES:
 This repo uses an assumed files structre described below and requires the download of several external databases, details and links to data which needs to be downloaded are provided in README files of the two principal subfolders. 
