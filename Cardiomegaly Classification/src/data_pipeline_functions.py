@@ -557,6 +557,7 @@ def SignalTableGenerator(
 
     df_icu_xray_patient_admission_timeseries_lab_ctr_cpar.drop(labels='dicom_file', axis=1, inplace=True)
 
+    # return final output
     return df_icu_xray_patient_admission_timeseries_lab_ctr_cpar
 
 
