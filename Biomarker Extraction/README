@@ -13,31 +13,30 @@ Japanese scociety of radiological technology (JSRT), Montgomery Tuberculosis
 (MGMY). These images are paired with lung and heart segmentaion masks. For
 MIMIC-CXR-JPG - 200 segmentation masks are avalible on PhysioNet in an
 assocaited datapaper (); for JSRT - segmentations are included in database; for
-MGMY - lung segmentation are avalible in teh Segmentation of Chest radiographs
+MGMY - lung segmentation are avalible in the Segmentation of Chest radiographs
 (SCR) database, heart segmentation are avalible with IMC segmentations. Links
 avalible below.
 
-This folder is linked to two papers
-- https://doi.org/10.1007/978-3-031-12053-4_2
-- LINK DATA PAPER (biomarkers)
 
 AUTHOR: 
 Benjamin Duvieusart (University of Oxford, Department of Engineering Science)
 with particular acknowledgments to Felix Krones (University of Oxford, Oxford
 Internet Institute) for help in writing code and Adam Mahdi (University of
-Oxford, Oxford Institute) for his supervision.
+Oxford, Oxford Institute) and Bartłomiej (Bartek) Papież (University of Oxford, 
+Big Data Insitutue) for thier supervision and guidance.
 
 
 USAGE NOTES: 
 If using this code please cite
 - https://doi.org/10.1007/978-3-031-12053-4_2
 - LINK DATA PAPER (biomarkers)
+- LINK DATA PAPER (masks)
 
 Please follow required file downloads and assumed file structure shown below
 
 --- REQUIRED FILE DOWNLOADS ---  
 Before using this folder please download the following and place into the
-assumed file structure described below
+assumed file structure described in main repo README file
 
 - MIMIC-CXR-JPG files and image database --> https://physionet.org/content/mimic-cxr-jpg/2.0.0/
 - MIMIC-CXR files (images not needed) --> https://physionet.org/content/mimic-cxr/2.0.0/
