@@ -1,6 +1,7 @@
 # BIOMRKS_CARMGLY
 
 CONTEXT:
+
 This repo contains all published code for the training and use of RCNN networks to extract heart and lung detections and segmentaitons. Then the use bounding boxes and masks to caluclate cardiomegaly biomarkers (CTR and CPAR) from chest x-ray samples in the MIMIC-CXR-JPG database. The biomarker values can then be used alone or in conjuction with other non-imaging data to classify multimodal cardiomegaly samples generated from linked MIMIC-IV and MIMIC-CXR data.
 
 This repo is closely linked to 3 papers (conference, plus 2 data papers), please cite these as approriate according to usage of code and resources:
@@ -9,9 +10,11 @@ This repo is closely linked to 3 papers (conference, plus 2 data papers), please
 - PhysioNet MASKS PAPER
 
 AUTHORS:
+
 This repo was authord by Benjamin Duvieusart and Felix Krones, with some scripts heavily based on code by Declan Grant. Particular acknowledgment is given to Adam Mahdi (University of Oxford, Oxford Institute) and Bartłomiej Papież (University of Oxford, Big Data Insitutue) for thier supervision and guidance
 
 USGAE NOTES:
+
 This repo uses an assumed files structre described below and requires the download of several external databases, details and links to data which needs to be downloaded are provided in README files of the two principal subfolders. 
 
 The 2 principal subfolders are:
