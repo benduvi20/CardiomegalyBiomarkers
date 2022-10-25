@@ -1,7 +1,7 @@
 # Biomarker Extraction 
 
 CONTEXT: 
-This folder contains code to train and use RCNN segmentation and detection models to extract cardiothoracic ratio (CTR) and cardiopulmonary area ratio (CPAR) of posterior-anterior chest X-ray samples in MIMIC-CXR-JPG. CTR and CPAR values can then be used to classify cardiomegaly samples using scripts found in the ./Cardiomegaly Classification/ folder of this repo. 
+This folder contains code to train and use RCNN segmentation and detection models to extract cardiothoracic ratio (CTR) and cardiopulmonary area ratio (CPAR) of posterior-anterior chest X-ray samples in MIMIC-CXR-JPG. CTR and CPAR values can then be used to classify cardiomegaly samples using scripts found in the ./Cardiomegaly Classification/ folder of this repo. More information on biomarkers and methods can be found in papers listed in usage notes. 
 
 Different ensemble models (detection prioritised, segmentation prioritised, best score ensemble, average ensemble) are avalible when retreiving CTR values. CPAR values can only be obtained via a segmentaiton only set of models.   
 
