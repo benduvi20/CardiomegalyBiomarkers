@@ -5,7 +5,7 @@ This folder contains code to train and use RCNN segmentation and detection model
 
 Different ensemble models (detection prioritised, segmentation prioritised, best score ensemble, average ensemble) are avalible when retreiving CTR values. CPAR values can only be obtained via a segmentaiton only set of models.   
 
-These scrpits use 3 sources of medical imaging databases: MIMIC-CXR-JPG, Japanese scociety of radiological technology (JSRT), Montgomery Tuberculosis (MGMY). These images are paired with lung and heart segmentaion masks. For MIMIC-CXR-JPG - 200 segmentation masks are avalible on PhysioNet in an assocaited datapaper (); for JSRT - segmentations are included in database; for MGMY - lung segmentation are avalible in the Segmentation of Chest radiographs (SCR) database, heart segmentation are avalible with IMC segmentations. Links avalible below.
+These scrpits use 3 sources of medical imaging databases: MIMIC-CXR-JPG, Japanese scociety of radiological technology (JSRT), Montgomery Tuberculosis (MGMY). These images are paired with lung and heart segmentaion masks. For MIMIC-CXR-JPG - 200 segmentation masks are avalible on PhysioNet in an assocaited datapaper (LINK DATA PAPER); for JSRT - segmentations are included in database; for MGMY - lung segmentation are avalible in the Segmentation of Chest radiographs (SCR) database, heart segmentation are avalible with IMC segmentations. Links avalible below.
 
 
 AUTHOR: 
@@ -22,8 +22,6 @@ If using this code please cite
 Please follow required file downloads and assumed file structure shown in main repo README file
 
 --- REQUIRED FILE DOWNLOADS ---  
-Before using this folder please download the following and place into the
-assumed file structure described in main repo README file
 
 - MIMIC-CXR-JPG files and image database --> https://physionet.org/content/mimic-cxr-jpg/2.0.0/
 - MIMIC-CXR files (images not needed) --> https://physionet.org/content/mimic-cxr/2.0.0/
