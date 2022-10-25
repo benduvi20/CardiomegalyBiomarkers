@@ -68,17 +68,17 @@ def get_xgboost(feature_type, model_params):
 
     if feature_type == 'BMRK':
         # get model -> since using few features (2), use shallow max_depth
-        model = XGBClassifier(eval_metric = model_params["eval_metric"], scale_pos_weight = model_params["scale_pos_weight"], 
-                              colsample_bytree = model_params["colsample_bytree"], gamma = model_params["gamma"], subsample = model_params["subsample"], 
-                              max_depth = model_params["max_depth_shallow"], learning_rate = model_params["lr"], 
-                              callbacks=[callback.EvaluationMonitor(show_stdv=False), callback.EarlyStopping(model_params["early_stopping"])])
+        model = XGBClassifier(eval_metric = model_params['eval_metric'], scale_pos_weight = model_params['scale_pos_weight'], 
+                              colsample_bytree = model_params['colsample_bytree'], gamma = model_params['gamma'], subsample = model_params['subsample'], 
+                              max_depth = model_params['max_depth_shallow'], learning_rate = model_params['lr'], 
+                              callbacks=[callback.EvaluationMonitor(show_stdv=False), callback.EarlyStopping(model_params['early_stopping'])])
 
     else:
         # get model -> since using more features, use deeper max_depth
-        model = XGBClassifier(eval_metric = model_params["eval_metric"], scale_pos_weight = model_params["scale_pos_weight"], 
-                              colsample_bytree = model_params["colsample_bytree"], gamma = model_params["gamma"], subsample = model_params["subsample"], 
-                              max_depth = model_params["max_depth_deep"], learning_rate = model_params["lr"], 
-                              callbacks=[callback.EvaluationMonitor(show_stdv=False),callback.EarlyStopping(model_params["early_stopping"])])
+        model = XGBClassifier(eval_metric = model_params['eval_metric'], scale_pos_weight = model_params['scale_pos_weight'], 
+                              colsample_bytree = model_params['colsample_bytree'], gamma = model_params['gamma'], subsample = model_params['subsample'], 
+                              max_depth = model_params['max_depth_deep'], learning_rate = model_params['lr'], 
+                              callbacks=[callback.EvaluationMonitor(show_stdv=False),callback.EarlyStopping(model_params['early_stopping'])])
 
     return model
 
