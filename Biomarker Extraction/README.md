@@ -35,6 +35,6 @@ Please follow required file downloads and assumed file structure shown in main r
 - Montgomery County heart masks --> LINK DATA PAPER (masks)
 
 - JSRT image database --> https://www.ajronline.org/doi/pdf/10.2214/ajr.174.1.1740071 (paper); http://db.jsrt.or.jp/eng.php (download)
-- SCR mask databse for JSRT database --> https://www.isi.uu.nl/Research/Databases/SCR/index.php 
+- SCR mask database for JSRT database --> https://www.isi.uu.nl/Research/Databases/SCR/index.php 
 
 - support python files (engine.py and utils.py) from pytorch for RCNN models --> https://github.com/pytorch/vision/tree/main/references/detection 
