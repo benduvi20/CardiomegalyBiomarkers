@@ -12,7 +12,7 @@ This repo is closely linked to 3 papers (conference, plus 2 data papers), please
 
 -- AUTHORS:
 
-This repo was authored by Benjamin Duvieusart and Felix Krones, with some scripts heavily based on code by Declan Grant. Particular acknowledgment is given to Adam Mahdi (University of Oxford, Oxford Institute) and Bartłomiej Papież (University of Oxford, Big Data Institute) for their supervision and guidance
+This repo was authored by Benjamin Duvieusart and Felix Krones, with some scripts heavily based on code by Declan Grant. Particular acknowledgment is given to Adam Mahdi (University of Oxford, Oxford Institute) and Bartłomiej Papież (University of Oxford, Big Data Institute) for their supervision and guidance, also to Dr Guy Parsons (Intensive Care Registrar, Thames Valley Deanery, NIHR Academic Clinical Fellow at Oxford University) for his support when dealing with clinical questions. 
 
 
 -- USGAE NOTES:
