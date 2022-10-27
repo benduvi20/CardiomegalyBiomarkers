@@ -2,19 +2,13 @@
 
 -- CONTEXT: 
 
-This folder contains code to train and use clardiomegaly classifiers using multimodal samples which contain imaging, and non-imaging information. There are scripts for two model achritechtures in this folder: 
-- _XGBoost.ipynb_ is a XGBoost model for classicfication of cardiomegaly train using either only non-imaging data from MIMIC-IV, only image derived data in the form of CTR and CPAR biomarker values, or a combination of both in a multimodal implementation. The model is trained on a 5-fold cross validation mathod with a common test set. 
-- _Image.ipynb_ is a CNN model for classification of cardiomegaly trained using only the posterior-anterior chest X-rays from MIMIX-CXR-JPG. This script does not implement 5-fold cross validaiton, but can easily be adapted for it using the XGBoost script as sample implementation.
+This folder contains code to train and use cardiomegaly classifiers using multimodal samples which contain imaging, and non-imaging information. There are scripts for two model architectures in this folder: 
+- _XGBoost.ipynb_ is a XGBoost model for classification of cardiomegaly train using either only non-imaging data from MIMIC-IV, only image derived data in the form of CTR and CPAR biomarker values, or a combination of both in a multimodal implementation. The model is trained on a 5-fold cross validation method with a common test set. 
+- _Image.ipynb_ is a CNN model for classification of cardiomegaly trained using only the posterior-anterior chest X-rays from MIMIX-CXR-JPG. This script does not implement 5-fold cross validation, but can easily be adapted for it using the XGBoost script as sample implementation.
 
-The last jupyter script, _DataPipeline.ipynb_, is a script needed to combine MIMIC-IV with MIMIV-CXR-JPG to create the multimodal dataset. It is essential to run this script before attempting the XGBoost and Image files. More information on our data methods, results, and analysis can be found in the papers listed in the usage notes section below. Please note that the first paper listed in the usage notes references another multimodal model, the script for this implementation is not avalible in this repo.
+The last jupyter script, _DataPipeline.ipynb_, is a script needed to combine MIMIC-IV with MIMIV-CXR-JPG to create the multimodal dataset. It is essential to run this script before attempting the XGBoost and Image files. More information on our data methods, results, and analysis can be found in the papers listed in the usage notes section below. Please note that the first paper listed in the usage notes references another multimodal model, the script for this implementation is not available in this repo.
 
-These scripts use data sourced from 4 locations. The multimodoal samples are generated from MIMIC-CXR-JPG, MIMIC-CXR, and MIMC-IV databases. In addition to these databases, biomarker values can be sourced from (LINK BIOMARKERS PAPER) or extracted using code found in the ./Biomarker Extraction/ folder of this repo. Links avalible below. 
-
-
--- AUTHORS:
-
-This folder was authored by Benjamin Duvieusart (University of Oxford, Department of  Engineering Science) with with significant contributions from Felix Krones (University of Oxford, Oxford Internet Institute) and Declan Grant (Univeristy of Oxford, Department of Engineering Science). Particular acknowledgement is given to Adam Mahdi (University of Oxford, Oxford Institute), Bartłomiej Papież (University of Oxford, Big Data Insitutue) and Dr Guy Parsons (Intensive Care Registrar, Thames Valley Deanery, NIHR Academic Clinical Fellow at Oxford University) for thier supervision and guidance.
-
+These scripts use data sourced from 4 locations. The multimodal samples are generated from MIMIC-CXR-JPG, MIMIC-CXR, and MIMC-IV databases. In addition to these databases, biomarker values can be sourced from (LINK BIOMARKERS PAPER) or extracted using code found in the ./Biomarker Extraction/ folder of this repo. Links available below. 
 
 -- USAGE NOTES: 
 If using this code please cite
