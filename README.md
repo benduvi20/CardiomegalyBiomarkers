@@ -7,7 +7,7 @@ This repo contains all published code for the training and use of RCNN networks 
 This repo is closely linked to 3 papers (conference, plus 2 data papers), please cite these as appropriate according to usage of code and resources:
 - Multimodal Cardiomegaly Classification with Image-Derived Digital Biomarkers (https://doi.org/10.1007/978-3-031-12053-4_2)
 - Heart and lung segmentations for MIMIC-CXR/MIMIC-CXR-JPG and Montgomery County TB databases (https://doi.org/10.13026/0k35-mb65)
-- PhysioNet BIOMARKERS PAPER
+- Image-derived cardiomegaly biomarker values for 96K chest X-rays in MIMIC-CXR/MIMIC-CXR-JPG (https://doi.org/10.13026/kfpv-zm25)
 
 
 -- AUTHORS:
