@@ -13,7 +13,7 @@ These scripts use 3 sources of medical imaging databases: MIMIC-CXR-JPG, Japanes
 If using this code please cite
 - Multimodal Cardiomegaly Classification with Image-Derived Digital Biomarkers (https://doi.org/10.1007/978-3-031-12053-4_2)
 - Heart and lung segmentations for MIMIC-CXR/MIMIC-CXR-JPG and Montgomery County TB databases (https://doi.org/10.13026/0k35-mb65)
-- LINK DATA PAPER (biomarkers)
+- Image-derived cardiomegaly biomarker values for 96K chest X-rays in MIMIC-CXR/MIMIC-CXR-JPG (https://doi.org/10.13026/kfpv-zm25)
 
 
 Please follow required file downloads and assumed file structure shown in main repo README file
@@ -22,11 +22,11 @@ Please follow required file downloads and assumed file structure shown in main r
 
 - MIMIC-CXR-JPG files and image database --> https://physionet.org/content/mimic-cxr-jpg/2.0.0/
 - MIMIC-CXR files (images not needed) --> https://physionet.org/content/mimic-cxr/2.0.0/
-- MIMIC-CXR masks --> LINK DATA PAPER (masks)
+- MIMIC-CXR masks --> https://physionet.org/content/heart-lung-segmentations-data/1.0.0/
 
 - Montgomery County image database --> https://doi.org/10.3978%2Fj.issn.2223-4292.2014.11.20 (paper); https://www.kaggle.com/datasets/raddar/tuberculosis-chest-xrays-montgomery (download)
 - Montgomery County associated lung mask database --> https://doi.org/10.3978%2Fj.issn.2223-4292.2014.11.20
-- Montgomery County heart masks --> LINK DATA PAPER (masks)
+- Montgomery County heart masks --> https://physionet.org/content/heart-lung-segmentations-data/1.0.0/
 
 - JSRT image database --> https://www.ajronline.org/doi/pdf/10.2214/ajr.174.1.1740071 (paper); http://db.jsrt.or.jp/eng.php (download)
 - SCR mask database for JSRT database --> https://www.isi.uu.nl/Research/Databases/SCR/index.php 
